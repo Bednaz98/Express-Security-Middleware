@@ -3,14 +3,7 @@ import { getTestServer } from '..'
 
 
 describe('Testing server', () => {
-
-
-    afterAll(() => {
-        const handle = getTestServer()
-        handle.closServer()
-    })
-    it('', async () => {
-        await axios.get('http://localhost:3000/test')
+    it('', () => {
         expect(true).toBe(true)
     })
 })

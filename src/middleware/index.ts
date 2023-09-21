@@ -4,9 +4,6 @@ import { generateAccessToken, generateRefreshToken } from '@jabz/security-utils/
 import { verifyJWT } from '@jabz/security-utils/lib/jwt/JwtGeneration'
 import { getSecureCookies, setSecureCookies } from '../cookies'
 
-
-
-
 export interface TokenData {
     userID: string
     data: { [key: string]: any }

@@ -7,9 +7,10 @@
     "access": "public"
   },
   "scripts": {
-    "test": "ts-node ./testHelper",
+    "test": "jest",
     "lint": "npx eslint . --max-warnings 0",
     "increment": "npm version patch",
+    "lint-fix": "eslint --fix",
     "build": "tsc -b",
     "pr-test": "npm run test",
     "test-pack": "npm i && npm run build && npm pack"
